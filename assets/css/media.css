@@ -1,0 +1,9 @@
+@media (max-width: 480px) {
+    .topdate_item{
+        font-size: 12px;
+        margin-right: 3px;
+    }
+    .topsoc_item a{
+        font-size: 14px;;
+    }
+}

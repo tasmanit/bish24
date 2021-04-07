@@ -1,0 +1,15 @@
+:root {
+
+  /* fonts */
+  --fontone: 'Roboto', sans-serif;;
+  --fontbold: 'Russo One', sans-serif;
+  --fonticon: 'FontAwesome';
+
+  /* color */
+  --colorbg: #ffff;
+  --colorBlue: rgba(49,39,131,1);
+  --colorRed: rgba(227,6,19,1);
+  --colorGrey: rgba(240,240,240,1);
+  --colorGrad: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(49,39,131,1) 0%, rgba(227,6,19,1) 100%);
+  --colorTrans: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(49,39,131,1) 0%, rgba(227,6,19,0) 100%);
+}
