@@ -11,7 +11,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Russo+One&family=Roboto&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="assets/css/style.css">
     <link rel="stylesheet" href="assets/css/media.css">
-    <title>Document</title>
+    <title>Бишкек24.kg | Новости Кыргызстана</title>
 </head>
 <body>
     
@@ -96,7 +96,7 @@
             <section class="slider_wrap">
                 <div class="container">
                     <div class="row">
-                        <div class="col-12">
+                        <div class="col-9">
                             <div class="slider">
                                 <div class="owl-carousel slidertop">
                                     <div class="item">
@@ -158,6 +158,26 @@
                                 </div>
                             </div>
                         </div>
+                        <div class="col-3">
+                            <div class="toptoday">
+                                <div class="toptoday_foto">
+                                    <div class="toptoday--img">
+                                        <img src="assets/img/fotografy.jpg" alt="">
+                                    </div>
+                                    <div class="toptoday--title">
+                                        <a href="">Фото дня</a>
+                                    </div>
+                                </div>
+                                <div class="toptoday_video">
+                                    <div class="toptoday--img">
+                                        <img src="assets/img/youtube.jpg" alt="">
+                                    </div>
+                                    <div class="toptoday--title">
+                                        <a href="">Видео дня</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </section>
@@ -166,6 +186,8 @@
                     <div class="row">
                         <div class="col-7">
                             <div class="today_news">
+                                <h2 class="today_news--title">17 марта</h2>
+                                <hr>
                                 <ul class="news_items">
                                     <li class="news_item">
                                         <div class="news_item--times">14:18</div>
@@ -429,19 +451,13 @@
                         <div class="col-5">
                             <aside class="sidebar ">
                                 <div class="tabs-container">
-                                    <ul class="tabs">
-                                      <li class="active">
-                                        <a href="">ТОП ФОТО</a>
-                                      </li>
-                                      <li>
-                                        <a href="">ТОП ВИДЕО</a>
-                                      </li>
-                                      <li>
-                                        <a href="">ТРЕНДЫ</a>
-                                      </li>
-                                    </ul>
+                                    <div class="tabs">
+                                      <button class="tabs__btn active" type="button" data-tab="#tab1">ТОП Фото</button>
+                                      <button class="tabs__btn" type="button" data-tab="#tab2">ТОП Видео</button>
+                                      <button class="tabs__btn" type="button" data-tab="#tab3">Тренды</button>
+                                    </div>
                                     <div class="tabs-content">
-                                      <div class="tabs-panel active" data-index="0">
+                                      <div class="tabs-panel active" id="tab1">
                                         <ul class="topnews_items">
                                             <li class="topnews_item">
                                                 <a href="" class="topnews_link">
@@ -546,11 +562,11 @@
                                             
                                         </ul>
                                       </div>
-                                      <div class="tabs-panel" data-index="1">
-                                        234
+                                      <div class="tabs-panel" id="tab2">
+                                        Топовые Видосики
                                       </div>
-                                      <div class="tabs-panel" data-index="2">
-                                        345
+                                      <div class="tabs-panel" id="tab3">
+                                        Тренды новостей
                                       </div>
                                     </div>
                                   </div>

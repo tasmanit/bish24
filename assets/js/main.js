@@ -1,21 +1,24 @@
-const tabLinks = document.querySelectorAll(".tabs a");
+const tabsBtn = document.querySelectorAll(".tabs .tabs__btn");
 const tabPanels = document.querySelectorAll(".tabs-panel");
  
-for(let el of tabLinks) {
-  el.addEventListener("click", e => {
-    e.preventDefault();
-     
-    document.querySelector('.tabs li.active').classList.remove("active");
-    document.querySelector('.tabs-panel.active').classList.remove("active");
- 
-    const parentListItem = el.parentElement;
-    parentList.classList.add("active");
-    const index = [...parentListItem.parentElement.children].indexOf(parentListItem);
-     
-    const panel = [...tabPanels].filter(el => el.getAttribute("data-index") == index);
-    panel[0].classList.add("active");
-  });
-}
+tabsBtn.forEach(function(item){
+    item.addEventListener("click", function(){
+        let currentBtn = item;
+        let tabId = currentBtn.getAttribute('data-tab');
+        let currentTab = document.querySelector(tabId)
+
+        tabsBtn.forEach(function(item){
+            item.classList.remove('active');
+        });
+        tabPanels.forEach(function(item){
+            item.classList.remove('active');
+        });
+        currentBtn.classList.add('active');
+        currentTab.classList.add('active');
+    });
+});
+
+
 
 $('.owl-carousel').owlCarousel({
     loop:true,
